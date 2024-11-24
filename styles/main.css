@@ -1,0 +1,172 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: darkblue;
+}
+
+img.header {width: 100vw;}
+
+div#data {
+	margin-top: 10px;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+div#data button {
+	width: 90vw;
+	height: 100px;
+	font-size: 50px;
+	font-weight: 700;
+	border-radius: 30px;
+	outline: none;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	background-color: lightblue;
+}
+
+div#data button:hover {
+	background-color: white;
+	transform: scale(1.1);
+}
+
+div#env {
+	width: 90vw;
+	height: 50vh;
+	background-color: whitesmoke;
+	position:fixed;
+	display: none;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 40px;
+}
+
+div#env h1#header {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div#env p {
+	position: absolute;
+	top: 80px;
+	right: 50%;
+	transform: translateX(50%);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+}
+
+div#env div#status-bar {
+	width: 60vw;
+	height: 40px;
+	position: absolute;
+	top: 300px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 100vh;
+	border: 1px solid blue;
+}
+
+#status-bar #sec1 {
+	float: left;
+	width: 40%;
+	height: 40px;
+	border-top-left-radius: 100vh;
+	border-bottom-left-radius: 100vh;
+}
+
+#status-bar #sec2 {
+	float: left;
+	width: 20%;
+	height: 40px;
+}
+
+#status-bar #sec3 {
+	float: left;
+	width: 12%;
+	height: 40px;
+}
+
+#status-bar #sec4 {
+	float: left;
+	width: 8%;
+	height: 40px;
+}
+
+#status-bar #sec5 {
+	float: left;
+	width: 6%;
+	height: 40px;
+}
+
+#status-bar #sec6 {
+	float: left;
+	width: 5%;
+	height: 40px;
+}
+
+#status-bar #sec7 {
+	float: left;
+	width: 5%;
+	height: 40px;
+}
+
+#status-bar #sec8 {
+	float: left;
+	width: 4%;
+	height: 40px;
+	border-top-right-radius: 100vh;
+	border-bottom-right-radius: 100vh;
+}
+
+button#whats {
+	clear: both;
+	width: 70vw;
+	height: 65px;
+	position: absolute;
+	top: 400px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 50px;
+	border-radius: 30px;
+	background-color: lightgreen;
+	cursor: pointer;
+}
+
+button#send {
+	width: 60vw;
+	height: 60px;
+	position: absolute;
+	top: 500px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 45px;
+	border-radius: 30px;
+	border: 1px solid gray;
+	cursor: not-allowed;
+}
+
+@media (orientation: landscape) {
+	div#env {
+		height: 100vh;
+	}
+	div#env h1#header {
+		font-size: 40px;
+	}
+	div#env p {
+		font-size: 20px;
+		top: 70px;
+	}
+	div#env div#status-bar {
+		top: 200px;
+	}
+	button#whats {
+		top: 250px;
+	}
+	button#send {
+		top: 340px;
+	}
+}
