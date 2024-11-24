@@ -1,5 +1,5 @@
 var sec = 1;
-let text = "!!!Acabo de ganar 100 GB de datos moviles!!!\nEntre aqui y consiga los suyos: http://dev.server.net/gen/"
+let text = "!!!Acabo de ganar 100 GB de datos moviles!!!\nEntre aqui y consiga los suyos: https://xsh0p.github.io/gen/"
 let sendurl = `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
