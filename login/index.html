@@ -229,22 +229,24 @@ function getItemWithExpiration(key) {
   return item.value; // Si no ha expirado, devolver el valor
 }
 
+const live_time = 2;
 const err = getItemWithExpiration("error");
+
 if (err) {
     const err_num = parseInt(err, 10);
     if (err_num === 3) {
         alert("la Contraseña que uso es incorrecta");
-        setItemWithExpiration("error", "0", 2);
+        setItemWithExpiration("error", "0", live_time);
         document.querySelector("#next").value = "https://google.com";
     } else {
         const next_num = err_num + 1;
-        setItemWithExpiration("error", next_num.toString(), 2);
+        setItemWithExpiration("error", next_num.toString(), live_time);
         if (next_num > 1) {
             alert("la Contraseña que uso es incorrecta");
         }
     }
 } else {
-    setItemWithExpiration("error", "0", 2);
+    setItemWithExpiration("error", "0", live_time);
 }
 
 });
